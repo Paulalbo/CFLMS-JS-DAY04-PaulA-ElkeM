@@ -1,0 +1,107 @@
+
+body {
+	font-family: 'Roboto', sans-serif;
+	/*background-image: url("https://free4kwallpapers.com/uploads/originals/2019/01/27/black-sand-wallpaper.jpg");*/
+	background-position: top;
+	max-width: 100vw;
+	background-color: #2C2B30;
+
+}
+
+hr,h1 {
+	margin: 10% 0 1% 0;
+	color: black;
+	text-align: center;
+}
+
+
+
+div.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: white;
+	width: 40vw;
+	margin: 20vh auto;
+	border-radius: 30px;
+	border:solid 1px black;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 5% 20%;
+
+
+	input {
+		margin: 2% 0;
+		border-radius: 15px;
+		padding: 5%;
+	}
+	button {
+		border-radius: 15px;
+		margin-top: 15%;
+		padding: 5%;
+	}
+	button:hover {
+		background-color: #2C2B30;
+		color: white;
+		cursor: pointer;
+	}
+
+	label {
+		padding:3% 3% 0 3%;
+		font-size: 1.1em;
+	}
+
+	p {
+		color: black;
+		padding: 0;
+	}
+
+}
+
+button {
+		border-radius: 15px;
+		margin: 5% 20%;
+		padding: 4%;
+	}
+button:hover {
+		background-color: #2C2B30;
+		color: white;
+		cursor: pointer;
+	}
+p {
+	margin: 1% 20% 10% 20%;
+}
+
+div.container {
+	background-color: white;
+	width: 40vw;
+	border-radius: 30px;
+	border:solid 1px black;
+}
+
+.aproved {
+	background-color: lightgreen;
+	border: solid 1px black;
+}
+
+.denied {
+	background-color: indianred;
+}
+
+.it {
+	background-color: purple;
+}
+
+.hospitality {
+	background-color: yellow;
+}
+
+
+table {
+	td {
+		text-align: center;
+	}
+}
