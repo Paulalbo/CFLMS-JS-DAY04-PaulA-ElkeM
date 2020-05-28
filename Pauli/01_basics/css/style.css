@@ -16,8 +16,9 @@ div.container {
   flex-direction: column;
   background-color: white;
   width: 40vw;
-  margin: 5% auto;
-  border-radius: 30px; }
+  margin: 20vh auto;
+  border-radius: 30px;
+  border: solid 1px black; }
 
 form {
   display: flex;
@@ -31,15 +32,50 @@ form {
     border-radius: 15px;
     margin-top: 15%;
     padding: 5%; }
+  form button:hover {
+    background-color: #2C2B30;
+    color: white;
+    cursor: pointer; }
+  form label {
+    padding: 3% 3% 0 3%;
+    font-size: 1.1em; }
   form p {
     color: black;
-    margin-top: 15%;
-    padding: 5%; }
+    padding: 0; }
+
+button {
+  border-radius: 15px;
+  margin: 5% 20%;
+  padding: 4%; }
+
+button:hover {
+  background-color: #2C2B30;
+  color: white;
+  cursor: pointer; }
+
+p {
+  margin: 1% 20% 10% 20%; }
+
+div.container {
+  background-color: white;
+  width: 40vw;
+  border-radius: 30px;
+  border: solid 1px black; }
 
 .aproved {
-  background-color: green; }
+  background-color: lightgreen;
+  border: solid 1px black; }
 
 .denied {
-  background-color: green; }
+  background-color: indianred; }
+
+.it {
+  background-color: purple; }
+
+.hospitality {
+  background-color: yellow; }
+
+table td {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
