@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fields</title>
+
+    <style>
+        #data {
+            border: 1px solid black;
+            width: 25%;
+            margin-top: 10px;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+        
+
+    </style>
+
+</head>
+<div>
+    <label>First Name:</label><br>
+    <input type="text" id="firstname"><br>
+    <label>Last Name:</label><br>
+    <input type="text" id="lastname"><br>
+    <label>Age:</label><br>
+    <input type="number" id="age"><br>
+    <label>Profession:</label><br>
+    <select class="select" id="profession">
+        <option value="CTO">CTO</option>
+        <option value="Frühstücksdirektor">Frühstücksdirektor</option>
+    </select><br>
+</div>
+
+<button onclick= DisplayInput()>SUBMIT</button>
+
+<div id="data">
+    <h1>Your Data:</h1>
+    <p id="displayfirst">First Name:</p>
+    <p id="displaylast">Last Name:</p>
+    <p id="displayage">Age:</p>
+    <p id="displayprof">Job Title:</p>
+</div>
+
+<body>
+    <script>
+        function DisplayInput(){
+        let firstName = document.getElementById("firstname").value;
+        let lastName = document.getElementById("lastname").value;
+        let yourAge = parseInt(document.getElementById("age").value);
+        let yourProf = document.getElementById("profession").value;
+
+        document.getElementById("displayfirst").innerHTML = firstName;
+        document.getElementById("displaylast").innerHTML = lastName;
+        document.getElementById("displayage").innerHTML = yourAge;
+        document.getElementById("displayprof").innerHTML = yourProf;
+
+        if (firstName.length > 5) {
+            document.getElementById("displayfirst").setAttribute("class", "green");
+        }
+        else{
+            document.getElementById("displayfirst").setAttribute("class", "red");
+        }
+
+        if (yourProf == "CTO") {
+            document.getElementById("displayprof").setAttribute("class", "purple");
+        }
+        else if (yourProf == "Frühstücksdirektor") {
+            document.getElementById("displayprof").setAttribute("class", "yellow");
+        }
+        }
+
+</script>
+    
+</body>
+</html>
