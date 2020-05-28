@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fields</title>
+
+    <style>
+        #data {
+            border: 1px solid black;
+            width: 25%;
+            margin-top: 10px;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+
+        
+
+    </style>
+
+</head>
+<div>
+    <label>First Name:</label><br>
+    <input type="text" id="firstname"><br>
+    <label>Last Name:</label><br>
+    <input type="text" id="lastname"><br>
+    <label>Age:</label><br>
+    <input type="number" id="age"><br>
+</div>
+
+<button onclick= DisplayInput()>SUBMIT</button>
+
+<div id="data">
+    <h1>Your Data:</h1>
+    <p id="displayfirst"></p>
+    <p id="displaylast"></p>
+    <p id="displayage"></p>
+</div>
+
+<body>
+    <script>
+        function DisplayInput(){
+        let firstName = document.getElementById("firstname").value;
+        let lastName = document.getElementById("lastname").value;
+        let yourAge = parseInt(document.getElementById("age").value);
+
+        document.getElementById("displayfirst").innerHTML = firstName;
+        document.getElementById("displaylast").innerHTML = lastName;
+        document.getElementById("displayage").innerHTML = yourAge;
+
+        if (firstName.length > 5) {
+            document.getElementById("displayfirst").setAttribute("class", "green");
+        }
+        else{
+            document.getElementById("displayfirst").setAttribute("class", "red");
+        }
+        }
+</script>
+    
+</body>
+</html>
